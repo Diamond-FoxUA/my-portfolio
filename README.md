@@ -12,8 +12,8 @@ A high-performance, single-page fullstack engineer portfolio built with an elite
 
 ### 🏗️ Feature-Driven Modular Architecture (FSD)
 
-• **Scalable Layer Boundaries:** Structured entirely around strict Feature-Driven Design principles inside the Next.js App Router layer mapping. Code is rigorously isolated across clear structural layers (widgets, features, entities, shared).
-• **Zero-Bundle Server Components:** Core structural layouts and static sections are rendered exclusively as React Server Components (RSC). This slashes client-side JavaScript delivery, guarantees instant initial page loads, and yields perfect Core Web Vitals scores.
+- **Scalable Layer Boundaries:** Structured entirely around strict Feature-Driven Design principles inside the Next.js App Router layer mapping. Code is rigorously isolated across clear structural layers (widgets, features, entities, shared).
+- **Zero-Bundle Server Components:** Core structural layouts and static sections are rendered exclusively as React Server Components (RSC). This slashes client-side JavaScript delivery, guarantees instant initial page loads, and yields perfect Core Web Vitals scores.
 
 ### ⚡ Unified Fullstack Architecture & Monolithic API Handling
 
@@ -26,10 +26,12 @@ A high-performance, single-page fullstack engineer portfolio built with an elite
 - **Strict Structural Enforcement:** Maintained via defensive programming and pure function implementations that rigorously honor the "Rules of React", enabling automated build-time performance optimization across client modules.
 
 ### ♿ Elite A11y Standards & Semantic HTML
-
-- **Custom Font-Variant Ligatures:** Leverages hand-optimized local files for **Cascadia Code** and **Impact** compiled via `next/font/local`. Implements native browser subpixel font smoothing (`antialiased`) alongside strict `font-variant-ligatures` CSS properties to mimic a true production IDE environment.
-- **Dynamic Social Graph & Semantic Metadata:** Fully optimized for crawler indexing and rich-media link preview sharing across Telegram, LinkedIn, and X (Twitter) utilizing declarative Next.js `Metadata` objects integrated with comprehensive **OpenGraph (OG)** image configurations.
-- **Native Modal Form Controls:** Implements the native HTML `<dialog>` element to anchor the interactive contact form wrapper. This delivers native keyboard focus traps, automated `Escape` key close boundaries, and semantic screen-reader focus redirection out of the box.
+*   **Semantic Layout Outlines:** Built strictly with native semantic landmark framework containers (`<header>`, `<main>`, `<section>`, `<footer>`) to construct an immaculate, accessible document tree outline easily parsed by screen readers.
+*   **Descriptive ARIA Associations:** Implements explicit `aria-label` settings on icon-only interactive controls (like social anchors), alongside precise `aria-describedby` and `aria-labelledby` mappings to programmatically link modal headlines and broadcast dynamic form field validation constraints to assistive engines.
+*   **Audible Clutter Reduction:** Employs defensive `aria-hidden="true"` attributes on decorative layouts, tech stack icons, and visual background mesh grids to block screen readers from processing unnecessary audible noise.
+*   **Native Modal Form Controls:** Implements the native HTML `<dialog>` element to anchor the interactive contact form wrapper. This delivers native keyboard focus traps, automated `Escape` key close boundaries, and semantic screen-reader focus redirection out of the box.
+*   **Custom Font-Variant Ligatures:** Leverages hand-optimized local files for **Cascadia Code** and **Impact** compiled via `next/font/local`. Implements native browser subpixel font smoothing (`antialiased`) alongside strict `font-variant-ligatures` CSS properties to mimic a true production IDE environment.
+*   **Dynamic Social Graph & Semantic Metadata:** Fully optimized for crawler indexing and rich-media link preview sharing across Telegram, LinkedIn, and X (Twitter) utilizing declarative Next.js `Metadata` objects integrated with comprehensive **OpenGraph (OG)** image configurations.
 
 ---
 
