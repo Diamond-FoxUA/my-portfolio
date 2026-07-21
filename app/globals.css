@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-mono: var(--font-mono), monospace;
+  --font-brutal: "Impact", "Arial Black", sans-serif;
+
+  --color-ayu-bg: #1f2430;
+  --color-ayu-panel: #191e2a;
+  --color-ayu-border: #141923;
+  --color-ayu-text: #cbccc6;
+  --color-ayu-heading: #707a8c;
+
+  --color-ayu-keyword: #ffa759;
+  --color-ayu-string: #bae67e;
+  --color-ayu-function: #ffcc66;
+  --color-ayu-tag: #5ccfe6;
+  --color-ayu-special: #f28779;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-background-light);
+    color: var(--color-foreground-light);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: var(--color-ayu-bg);
+      color: var(--color-ayu-text);
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: common-ligatures;
+  }
+
+  h1 {
+    font-family: var(--font-brutal);
+    color: #ffffff;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-mono);
+    color: #ffffff;
+    font-variant-ligatures: common-ligatures;
+  }
+
+  img,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    shape-rendering: auto;
+  }
+
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ayu-tag);
+    outline-offset: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-ayu-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-ayu-border);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ayu-heading);
+  }
+}
