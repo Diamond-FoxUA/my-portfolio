@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import Header from "@/widgets/header/ui/Header";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -75,7 +77,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${cascadiaLocal.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 flex flex-col pt-30">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

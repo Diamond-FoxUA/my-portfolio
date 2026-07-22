@@ -20,8 +20,8 @@
 
 @layer base {
   :root {
-    background-color: var(--color-background-light);
-    color: var(--color-foreground-light);
+    background-color: var(--color-ayu-bg);
+    color: var(--color-ayu-text);
   }
 
   @media (prefers-color-scheme: dark) {
