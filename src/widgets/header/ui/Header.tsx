@@ -9,7 +9,7 @@ export default function Header() {
       >
         <Link
           href="/"
-          className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1"
+          className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text active:text-ayu-heading transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1"
         >
           df
           <span className="text-emerald-400 ml-0.5 animate-pulse transition-colors duration-300 group-hover:[animation-duration:600ms]">
@@ -21,7 +21,7 @@ export default function Header() {
           <li>
             <a
               href="#projects"
-              className="hover:text-emerald-400 transition-colors duration-300"
+              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; projects
             </a>
@@ -29,7 +29,7 @@ export default function Header() {
           <li>
             <a
               href="#stack"
-              className="hover:text-emerald-400 transition-colors duration-300"
+              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; stack
             </a>
@@ -37,7 +37,7 @@ export default function Header() {
           <li>
             <a
               href="#roadmap"
-              className="hover:text-emerald-400 transition-colors duration-300"
+              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; future-scope
             </a>
@@ -45,7 +45,7 @@ export default function Header() {
           <li>
             <a
               href="#"
-              className="hover:text-emerald-400 transition-colors duration-300"
+              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; stats
             </a>
@@ -54,7 +54,7 @@ export default function Header() {
 
         <div className="flex items-center">
           <a
-            className="text-xs font-mono font-semibold tracking-wide uppercase bg-emerald-500/5 hover:bg-emerald-500 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 hover:border-emerald-500 px-4 py-2 transition-colors duration-300"
+            className="text-xs font-mono font-semibold tracking-wide uppercase bg-emerald-500/5 hover:bg-emerald-500 active:bg-emerald-700 active:border-emerald-700 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 hover:border-emerald-500 px-4 py-2 transition-colors duration-300"
             href="/Dmytro_Farbun_Fullstack_Developer.pdf"
             download="Dmytro_Farbun_Fullstack_Developer.pdf"
             aria-label="Download PDF Resume File Bundle"
