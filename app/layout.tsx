@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Header from "@/widgets/header/ui/Header";
+import Footer from "@/widgets/footer/ui/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -82,6 +83,7 @@ export default function RootLayout({
         <main className="flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 flex flex-col pt-30">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
