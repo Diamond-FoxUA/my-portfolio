@@ -44,102 +44,208 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="font-mono text-sm flex gap-4 pl-2 pt-3">
-          <div className="text-right">
-            1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br /><br />9<br />
-            <br />10<br /><br />11<br />
-          </div>
+        <pre className="font-mono text-sm select-text m-0">
+          <code className="block">
+            <ol className="list-none [counter-reset:item] flex flex-col pr-2 gap-y-0.5 p-0 m-0">
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  1
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  <span className="text-ayu-keyword">import</span>&nbsp;
+                  <span className="text-ayu-function">{"{"}</span> a11y{" "}
+                  <span className="text-ayu-function">{"}"}</span>{" "}
+                  <span className="text-ayu-keyword">from</span>&nbsp;
+                  <span className="text-ayu-string">
+                    &quot;@standards/aria-semantic&quot;
+                  </span>
+                  ;
+                </div>
+              </li>
 
-          <div>
-            <p className="block w-full">
-              <span className="text-ayu-keyword">import</span>&nbsp;
-              <span className="text-ayu-function">&#123;</span> a11y{" "}
-              <span className="text-ayu-function">&#125;</span>{" "}
-              <span className="text-ayu-keyword">from</span>
-              &nbsp;
-              <span className="text-ayu-string">
-                &quot;@standards/aria-semantic&quot;
-              </span>
-              ; <br />
-              <span className="text-ayu-keyword">import</span>&nbsp;
-              <span className="text-ayu-function">&#123;</span> seo{" "}
-              <span className="text-ayu-function">&#125;</span>{" "}
-              <span className="text-ayu-keyword">from</span>{" "}
-              <span className="text-ayu-string">
-                &quot;@web/optimization&quot;
-              </span>
-              ; <br />
-              <br />
-              <span className="text-ayu-keyword">export const </span> profile ={" "}
-              <span className="text-ayu-function">&#123;</span>
-            </p>
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  2
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  <span className="text-ayu-keyword">import</span>&nbsp;
+                  <span className="text-ayu-function">{"{"}</span> seo{" "}
+                  <span className="text-ayu-function">{"}"}</span>{" "}
+                  <span className="text-ayu-keyword">from</span>&nbsp;
+                  <span className="text-ayu-string">
+                    &quot;@web/optimization&quot;
+                  </span>
+                  ;
+                </div>
+              </li>
 
-            <ul>
-              <li>
-                &nbsp;&nbsp; core: <span className="text-[#9767ff]">&#91;</span>
-                <span className="text-ayu-string">
-                  &quot;Next.js 14&quot;
-                </span>,{" "}
-                <span className="text-ayu-string">
-                  <span>&quot;</span>React 18&quot;
-                </span>
-                ,{" "}
-                <span className="text-ayu-string">&quot;TypeScript&quot;</span>
-                <span className="text-[#9767ff]">&#93;</span>, <br />
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start min-h-6">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  3
+                </div>
+                <div></div>
               </li>
-              <li>
-                &nbsp;&nbsp; styles:{" "}
-                <span className="text-[#9767ff]">&#91;</span>
-                <span className="text-ayu-string">
-                  &quot;Tailwind CSS&quot;
-                </span>
-                ,
-                <span className="text-ayu-string">&quot;CSS modules&quot;</span>
-                <span className="text-[#9767ff]">&#93;</span>, <br />
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  4
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  <span className="text-ayu-keyword">export const </span>{" "}
+                  profile = <span className="text-ayu-function">{"{"}</span>
+                </div>
               </li>
-              <li>
-                &nbsp;&nbsp; backend:{" "}
-                <span className="text-[#9767ff]">&#91;</span>
-                <span className="text-ayu-string">&quot;Node.js&quot;</span>,
-                <span className="text-ayu-string">&quot;Prisma ORM&quot;</span>,
-                <span className="text-ayu-string">&quot;PostgreSQL&quot;</span>
-                <span className="text-[#9767ff]">&#93;</span>, <br />
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  5
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; core: <span className="text-[#9767ff]">[</span>
+                  <span className="text-ayu-string">
+                    &quot;Next.js 16&quot;
+                  </span>
+                  ,{" "}
+                  <span className="text-ayu-string">&quot;React 19&quot;</span>,{" "}
+                  <span className="text-ayu-string">
+                    &quot;TypeScript&quot;
+                  </span>
+                  <span className="text-[#9767ff]">]</span>,
+                </div>
               </li>
-              <li>
-                &nbsp;&nbsp; focus:{" "}
-                <span className="text-[#9767ff]">&#91;</span>
-                <span className="text-ayu-string">
-                  &quot;Semantic HTML&quot;
-                </span>
-                ,
-                <span className="text-ayu-string">
-                  &quot;ARIA Accessibility&quot;
-                </span>
-                ,
-                <span className="text-ayu-string">
-                  &quot;SEO Optimization&quot;
-                </span>
-                <span className="text-[#9767ff]">&#93;</span>, <br />
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  6
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; styles: <span className="text-[#9767ff]">[</span>
+                  <span className="text-ayu-string">
+                    &quot;Tailwind CSS&quot;
+                  </span>
+                  ,{" "}
+                  <span className="text-ayu-string">
+                    &quot;CSS modules&quot;
+                  </span>
+                  <span className="text-[#9767ff]">]</span>,
+                </div>
               </li>
-              <li>
-                &nbsp;&nbsp; specs:{" "}
-                <span className="text-[#9767ff]">&#123;</span> architecture:{" "}
-                <span className="text-ayu-string">&quot;FSD&quot;</span>,
-                geometry:{" "}
-                <span className="text-ayu-string">&quot;rounded-none&quot;</span>{" "}
-                <span className="text-[#9767ff]">&#125;</span>, <br />
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  7
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; backend:{" "}
+                  <span className="text-[#9767ff]">[</span>
+                  <span className="text-ayu-string">
+                    &quot;Node.js&quot;
+                  </span>,{" "}
+                  <span className="text-ayu-string">
+                    &quot;Prisma ORM&quot;
+                  </span>
+                  ,{" "}
+                  <span className="text-ayu-string">
+                    &quot;PostgreSQL&quot;
+                  </span>
+                  <span className="text-[#9767ff]">]</span>,
+                </div>
               </li>
-              <li>
-                &nbsp;&nbsp; languages:
-                <span className="text-[#9767ff]">&#123;</span> en:{" "}
-                <span className="text-ayu-string">&quot;B2&quot;</span>, uk:
-                <span className="text-ayu-string">&quot;Native&quot;</span>
-                <span className="text-[#9767ff]">&#125;</span>, <br />
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  8
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; focus: <span className="text-[#9767ff]">[</span>
+                  <span className="text-ayu-string">
+                    &quot;Semantic HTML&quot;
+                  </span>
+                  ,{" "}
+                  <span className="text-ayu-string">
+                    &quot;ARIA Accessibility&quot;
+                  </span>
+                  ,{" "}
+                  <span className="text-ayu-string">
+                    &quot;SEO Optimization&quot;
+                  </span>
+                  <span className="text-[#9767ff]">]</span>,
+                </div>
               </li>
-            </ul>
-            &#125;
-          </div>
-        </div>
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  9
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; specs:{" "}
+                  <span className="text-[#9767ff]">{"{"}</span> architecture:{" "}
+                  <span className="text-ayu-string">&quot;FSD&quot;</span>,
+                  geometry:{" "}
+                  <span className="text-ayu-string">
+                    &quot;rounded-none&quot;
+                  </span>{" "}
+                  <span className="text-[#9767ff]">{"}"}</span>,
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  10
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  &nbsp;&nbsp; languages:{" "}
+                  <span className="text-[#9767ff]">{"{"}</span> en:{" "}
+                  <span className="text-ayu-string">&quot;B2&quot;</span>, uk:
+                  <span className="text-ayu-string">&quot;Native&quot;</span>
+                  <span className="text-[#9767ff]">{"}"}</span>,
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[25px_1fr] gap-x-4 items-start">
+                <div
+                  className="text-right text-slate-600 select-none"
+                  aria-hidden="true"
+                >
+                  11
+                </div>
+                <div className="whitespace-pre-wrap wrap-break-word">
+                  <span className="text-ayu-function">{"}"}</span>;
+                </div>
+              </li>
+            </ol>
+          </code>
+        </pre>
       </div>
 
       <div className="absolute top-[10dvh] left-[10%] z-0 w-30 h-30 blur-[120px] bg-ayu-keyword"></div>
