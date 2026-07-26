@@ -3,8 +3,8 @@ import Icon from "@/shared/ui/Icon";
 
 export default function Footer() {
   return (
-    <footer className="text-ayu-text font-mono text-sm tracking-wider px-6 py-8 w-full border-t border-slate-700">
-      <div className="max-w-5xl w-full flex flex-col-reverse md:flex-row md:justify-between gap-10 items-center mx-auto">
+    <footer className="text-ayu-text font-mono text-sm tracking-wider w-full border-t border-slate-700">
+      <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row md:px-6 py-8 md:justify-between gap-10 items-center mx-auto">
         <div className="flex gap-5">
           <p>&copy;{new Date().getFullYear()}</p>
           <p className="text-slate-500">df. all_systems_nominal</p>
