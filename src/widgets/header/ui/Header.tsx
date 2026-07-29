@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed top-4 px-6 py-4 left-1/2 -translate-x-1/2 w-full max-w-5xl z-50 bg-[#030712]/40 backdrop-blur-md border border-slate-800/40 rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]">
+    <header className="fixed top-4 px-6 py-4 left-1/2 -translate-x-1/2 w-full max-w-5xl z-50 bg-[#030712]/40 backdrop-blur-md border border-slate-800/40 rounded-4xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]">
       <nav
         className="flex items-center justify-between"
         aria-label="Main Navigation"

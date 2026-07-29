@@ -128,8 +128,11 @@ export default function EditorInfo() {
                 <span className="text-ayu-string">
                   &quot;Node.js&quot;
                 </span>,{" "}
+                <span className="text-ayu-string">&quot;Express&quot;</span>,{" "}
+                <span className="text-ayu-string">&quot;MongoDB&quot;</span>,{" "}
                 <span className="text-ayu-string">&quot;Prisma ORM&quot;</span>,{" "}
-                <span className="text-ayu-string">&quot;PostgreSQL&quot;</span>
+                <span className="text-ayu-string">&quot;PostgreSQL&quot;</span>,{" "}
+                <span className="text-ayu-string">&quot;Firebase&quot;</span>
                 <span className="text-[#9767ff]">]</span>,
               </div>
             </li>

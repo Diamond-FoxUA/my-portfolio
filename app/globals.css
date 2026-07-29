@@ -16,6 +16,17 @@
   --color-ayu-function: #ffcc66;
   --color-ayu-tag: #5ccfe6;
   --color-ayu-special: #f28779;
+
+  --animate-marquee: marquee 60s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(90%);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+  }
 }
 
 @layer base {
