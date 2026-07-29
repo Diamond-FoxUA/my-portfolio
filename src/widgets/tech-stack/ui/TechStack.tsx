@@ -1,89 +1,122 @@
 import { stackData } from "../model/stackData";
 
 export default function TechStack() {
-  // shadow-[0_20px_50px_rgba(0,0,0,0.6)]
   return (
-    <section id="stack" aria-describedby="stack-heading" className="pb-15">
+    <section
+      id="stack"
+      aria-describedby="stack-heading"
+      className="pb-15 w-full max-w-5xl mx-auto px-4"
+    >
       <h2
         id="stack-heading"
-        className="text-2xl font-black tracking-tight mb-10"
+        className="text-2xl font-black tracking-tight pb-10 uppercase text-white font-sans"
       >
         Technical Skills
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-        <article className="flex flex-col group md:col-span-6 md:row-span-2 p-6 bg-[#242936] shadow-2xl">
-          <h3 className="block font-mono text-sm uppercase tracking-widest text-ayu-heading mb-6">
+
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-slate-800 bg-[#030712] shadow-2xl">
+        <div
+          role="region"
+          aria-label="Frontend Technologies"
+          className="flex flex-col justify-start group md:col-span-6 md:row-span-2 p-6 bg-ayu-border border-r border-b border-slate-800 transition-colors duration-300 hover:bg-[#f29718]/5 hover:border-[#f29718]/30"
+        >
+          <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [core_frontend]
           </h3>
 
-          <ul className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4 my-auto ">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-auto w-full font-mono text-center">
             {stackData.coreFrontend.map((item) => (
               <li
-                className="font-mono text-center text-ayu-function hover:text-emerald-400 border border-ayu-function hover:border-emerald-400 p-2 w-full cursor-default transition-colors duration-300"
+                className="border border-ayu-function p-2 w-full text-ayu-function cursor-default transition-colors duration-300 hover:border-white hover:text-white"
                 key={item.name}
               >
                 {item.name}
               </li>
             ))}
           </ul>
-        </article>
+        </div>
 
-        <article className="group md:col-span-6 p-6 bg-[#242936] shadow-2xl">
-          <h3 className="block font-mono text-sm uppercase tracking-widest text-ayu-heading mb-6">
+        <div
+          role="region"
+          aria-label="Engineering Focus"
+          className="group md:col-span-6 p-6 bg-ayu-border border-r border-b border-slate-800 rounded-none transition-colors duration-300 hover:bg-emerald-950/20 hover:border-emerald-500/40"
+        >
+          <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [engineering_focus]
           </h3>
 
-          <ul className="flex flex-wrap lg:flex-nowrap items-center gap-3 font-mono font-extrabold text-xl text-white uppercase tracking-tight my-3">
+          <ul className="flex flex-col gap-4 justify-center my-auto w-full font-sans font-black text-xl text-white uppercase tracking-tight">
             {stackData.engineeringFocus.map((item) => (
-              <li className="flex items-center gap-4" key={item.name}>
-                <span className="block w-2 h-2 rounded-none bg-emerald-400 animate-pulse shrink-0" />
+              <li
+                className="flex items-center gap-4 cursor-default"
+                key={item.name}
+              >
+                <span
+                  aria-hidden="true"
+                  className="block w-2 h-2 rounded-none bg-emerald-400 animate-pulse shrink-0"
+                />
                 <span>{item.name}</span>
               </li>
             ))}
           </ul>
-        </article>
+        </div>
 
-        <article className="group md:col-span-3 p-4 bg-[#242936] shadow-2xl">
-          <h3 className="block font-mono text-sm uppercase tracking-widest text-ayu-heading mb-6">
+        <div
+          role="region"
+          aria-label="Backend Technologies"
+          className="group flex flex-col justify-start p-6 bg-ayu-border border-r border-b border-slate-800 md:col-span-6 lg:col-span-3 transition-colors duration-300 hover:bg-[#39bae6]/5 hover:border-[#39bae6]/30"
+        >
+          <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [backend_infrastructure]
           </h3>
 
-          <ul>
+          <ul className="grid grid-cols-2 gap-x-2 gap-y-3 my-auto w-full font-mono text-sm">
             {stackData.backendInfrastructure.map((item) => (
               <li
-                className="font-mono text-ayu-function hover:text-emerald-400 transition-colors duration-300 cursor-default"
+                className="text-ayu-function cursor-default transition-colors duration-300 hover:text-white whitespace-nowrap"
                 key={item.name}
               >
-                &#62; {item.name}
+                <span aria-hidden="true" className="select-none">
+                  &gt;
+                </span>{" "}
+                {item.name}
               </li>
             ))}
           </ul>
-        </article>
+        </div>
 
-        <article className="group flex flex-col justify-between md:col-span-3 p-4 bg-[#242936] shadow-2xl">
-          <h3 className="block text-center font-mono text-sm uppercase tracking-widest text-ayu-heading">
+        <div
+          role="region"
+          aria-label="System Environment Variables"
+          className="group flex flex-col justify-start p-6 bg-ayu-border border-r border-b border-slate-800 md:col-span-12 lg:col-span-3 transition-colors duration-300 hover:bg-[#a37acc]/5 hover:border-[#a37acc]/30"
+        >
+          <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [environment_and_local]
           </h3>
 
-          <div className="font-mono text-sm text-center grid grid-cols-2 gap-1 border-t border-l border-slate-800 mt-5 md:my-auto">
-            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/30">
-              <span className="text-ayu-tag">LANG_UK</span>
-              <span className="text-ayu-function">NAT</span>
+          <div className="grid grid-cols-2 gap-0 border-t border-l border-slate-800 my-auto w-full font-mono text-sm text-center">
+            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+              <span className="text-ayu-tag text-xs tracking-wider">
+                LANG_UK
+              </span>
+              <span className="text-white font-bold">NATIVE</span>
             </div>
-            <div className="flex flex-col gap-1 text-center border-r border-b border-slate-800 p-3 bg-[#0c1322]/30">
-              <span className="text-ayu-tag">LANG_EN</span>
-              <span className="text-ayu-function">B2</span>
+            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+              <span className="text-ayu-tag text-xs tracking-wider">
+                LANG_EN
+              </span>
+              <span className="text-white font-bold">B2</span>
             </div>
-            <div className="flex flex-col gap-1 text-center border-r border-b border-slate-800 p-3 bg-[#0c1322]/30">
-              <span className="text-ayu-tag">VCS</span>
-              <span className="text-ayu-function">GIT</span>
+            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+              <span className="text-ayu-tag text-xs tracking-wider">VCS</span>
+              <span className="text-white font-bold">GIT</span>
             </div>
-            <div className="flex flex-col gap-1 text-center border-r border-b border-slate-800 p-3 bg-[#0c1322]/30">
-              <span className="text-ayu-tag">HOST</span>
-              <span className="text-ayu-function">VERCEL</span>
+            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+              <span className="text-ayu-tag text-xs tracking-wider">HOST</span>
+              <span className="text-white font-bold">VERCEL</span>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </section>
   );
