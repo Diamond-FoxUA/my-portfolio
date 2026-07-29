@@ -5,7 +5,7 @@ export default function TechStack() {
     <section
       id="stack"
       aria-describedby="stack-heading"
-      className="pb-15 w-full max-w-5xl mx-auto px-4"
+      className="pb-15 w-full mx-auto"
     >
       <h2
         id="stack-heading"
@@ -14,11 +14,11 @@ export default function TechStack() {
         Technical Skills
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-slate-800 bg-[#030712] shadow-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-ayu-border bg-[#030712] shadow-2xl">
         <div
           role="region"
           aria-label="Frontend Technologies"
-          className="flex flex-col justify-start group md:col-span-6 md:row-span-2 p-6 bg-ayu-border border-r border-b border-slate-800 transition-colors duration-300 hover:bg-[#f29718]/5 hover:border-[#f29718]/30"
+          className="flex flex-col justify-start group md:col-span-6 md:row-span-2 p-6 bg-ayu-bg border-r border-b border-ayu-border transition-colors duration-300 hover:bg-[#f29718]/15 hover:border-[#f29718]/30"
         >
           <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [core_frontend]
@@ -39,7 +39,7 @@ export default function TechStack() {
         <div
           role="region"
           aria-label="Engineering Focus"
-          className="group md:col-span-6 p-6 bg-ayu-border border-r border-b border-slate-800 rounded-none transition-colors duration-300 hover:bg-emerald-950/20 hover:border-emerald-500/40"
+          className="group md:col-span-6 p-6 bg-ayu-bg border-r border-b border-ayu-border rounded-none transition-colors duration-300 hover:bg-emerald-950/50 hover:border-emerald-500/40"
         >
           <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [engineering_focus]
@@ -64,7 +64,7 @@ export default function TechStack() {
         <div
           role="region"
           aria-label="Backend Technologies"
-          className="group flex flex-col justify-start p-6 bg-ayu-border border-r border-b border-slate-800 md:col-span-6 lg:col-span-3 transition-colors duration-300 hover:bg-[#39bae6]/5 hover:border-[#39bae6]/30"
+          className="group flex flex-col justify-start p-6 bg-ayu-bg border-r border-b border-ayu-border md:col-span-6 lg:col-span-3 transition-colors duration-300 hover:bg-[#39bae6]/15 hover:border-[#39bae6]/30"
         >
           <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [backend_infrastructure]
@@ -88,30 +88,30 @@ export default function TechStack() {
         <div
           role="region"
           aria-label="System Environment Variables"
-          className="group flex flex-col justify-start p-6 bg-ayu-border border-r border-b border-slate-800 md:col-span-12 lg:col-span-3 transition-colors duration-300 hover:bg-[#a37acc]/5 hover:border-[#a37acc]/30"
+          className="group flex flex-col justify-start p-6 bg-ayu-bg border-r border-b border-ayu-border md:col-span-12 lg:col-span-3 transition-colors duration-300 hover:bg-[#a37acc]/20 hover:border-[#a37acc]/30"
         >
           <h3 className="block font-mono text-xs uppercase tracking-widest text-[#5c6773] mb-6">
             [environment_and_local]
           </h3>
 
-          <div className="grid grid-cols-2 gap-0 border-t border-l border-slate-800 my-auto w-full font-mono text-sm text-center">
-            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+          <div className="grid grid-cols-2 gap-0 border-t border-l border-ayu-border my-auto w-full font-mono text-sm text-center">
+            <div className="flex flex-col gap-1 border-r border-b border-ayu-border p-3 bg-[#0c1322]/20 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
               <span className="text-ayu-tag text-xs tracking-wider">
                 LANG_UK
               </span>
               <span className="text-white font-bold">NATIVE</span>
             </div>
-            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+            <div className="flex flex-col gap-1 border-r border-b border-ayu-border p-3 bg-[#0c1322]/20 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
               <span className="text-ayu-tag text-xs tracking-wider">
                 LANG_EN
               </span>
               <span className="text-white font-bold">B2</span>
             </div>
-            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+            <div className="flex flex-col gap-1 border-r border-b border-ayu-border p-3 bg-[#0c1322]/20 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
               <span className="text-ayu-tag text-xs tracking-wider">VCS</span>
               <span className="text-white font-bold">GIT</span>
             </div>
-            <div className="flex flex-col gap-1 border-r border-b border-slate-800 p-3 bg-[#0c1322]/40 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
+            <div className="flex flex-col gap-1 border-r border-b border-ayu-border p-3 bg-[#0c1322]/20 transition-colors duration-300 group-hover/cell:bg-[#0c1322]">
               <span className="text-ayu-tag text-xs tracking-wider">HOST</span>
               <span className="text-white font-bold">VERCEL</span>
             </div>
