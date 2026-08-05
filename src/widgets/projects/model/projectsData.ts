@@ -1,0 +1,80 @@
+export interface ProjectItem {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  architectureFeature: string;
+  seoPerformance: string;
+  ariaAudit: string;
+  techStack: string[];
+  liveUrl: string;
+  githubUrl: string;
+}
+
+export const projectsData: ProjectItem[] = [
+  {
+    id: "p1",
+    slug: "petlove",
+    title: "PetLove — Pet Care Web Application",
+    techStack: [
+      "Next.js",
+      "React",
+      "Redux Toolkit",
+      "React Hook Form",
+      "Yup",
+      "Axios",
+      "Sonner",
+      "Cookies",
+    ],
+    description:
+      "Architected and built a scalable web application using Next.js App Router and Feature-Driven Architecture to guarantee high code isolation, structured component tiers, and strict long-term maintainability.",
+    architectureFeature:
+      "FSD Layout Integration with React Server Components (RSC) optimization for dynamic public routing",
+    seoPerformance:
+      "Top-tier SEO compliance backed by semantic HTML5 structures and automated dynamic metadata routing engines",
+    ariaAudit:
+      "Advanced Web Accessibility (A11y) with screen-reader attributes, aria-labels, and fluid manual keyboard navigation paths",
+    liveUrl: "https://github.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "p2",
+    slug: "psychologist-app",
+    title: "Psychologist App",
+    techStack: ["React", "React Router", "TanStack Query", "Firebase"],
+    description:
+      "Engineered a responsive medical specialist web layout featuring state-of-the-art server-state management. Implemented dynamic client-side filtering, multi-criteria data sorting, and robust user authentication workflows.",
+    architectureFeature:
+      "Efficient server-state synchronization with localized client caches via TanStack Query",
+    seoPerformance:
+      "Clean document structure optimized for responsive rendering and OpenGraph data compliance",
+    ariaAudit:
+      "Accessible custom component interactions with focus state management and local theme persistence triggers",
+    liveUrl: "https://github.com",
+    githubUrl: "https://github.com",
+  },
+  {
+    id: "p3",
+    slug: "google-forms-lite",
+    title: "Google Forms Lite Clone",
+    techStack: [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    description:
+      "Developed a dynamic, interactive fullstack form builder and live compiler featuring instant response reviews. Managed automated multi-package infrastructure using modern workspace routing tools.",
+    architectureFeature:
+      "Monorepo workspace system architecture utilizing npm/pnpm workflows for package isolation",
+    seoPerformance:
+      "Strict semantic form parsing trees optimized for speed, lightweight data layers, and search indexing",
+    ariaAudit:
+      "Semantic form field mapping, accessible input descriptions, and custom native validation focus alerts",
+    liveUrl: "https://github.com",
+    githubUrl: "https://github.com",
+  },
+];
