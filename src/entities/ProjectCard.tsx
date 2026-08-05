@@ -1,6 +1,6 @@
 "use client";
 import { useDragControls, motion } from "framer-motion";
-import type { ProjectItem } from "../model/projectsData";
+import type { ProjectItem } from "../widgets/projects/model/projectsData";
 import { RefObject } from "react";
 import { X } from "lucide-react";
 

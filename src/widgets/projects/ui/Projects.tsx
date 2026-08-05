@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import ProjectCard from "../entities/ProjectCard";
+import ProjectCard from "../../../entities/ProjectCard";
 import { projectsData } from "../model/projectsData";
 
 export default function Projects() {
