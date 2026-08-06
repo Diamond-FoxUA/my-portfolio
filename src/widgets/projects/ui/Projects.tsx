@@ -15,11 +15,19 @@ export default function Projects() {
       >
         My projects
       </h2>
-      {/* TODO: Remove grid, add starting coordinates to cards, add relative to
-      parent, add absolute to cards */}
+
+      <p className="text-sm font-mono text-center text-ayu-keyword/70">
+        <span aria-hidden="true" className="animate-pulse">
+          ➔&nbsp;
+        </span>
+        <span>
+          Interactive workspace. Drag file headers to rearrange layout.
+        </span>
+      </p>
+
       <ul
         ref={constraintsRef}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5 w-full bg-transparent transition-colors duration-0"
+        className="relative h-175 w-full bg-transparent transition-colors duration-0"
       >
         {projectsData.map((item) => (
           <ProjectCard
