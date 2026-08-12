@@ -19,48 +19,40 @@ export default function Header() {
 
         <ul className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-slate-400 font-mono">
           <li>
-            <a
+            <Link
               href="#projects"
               className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#stack"
               className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; stack
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#roadmap"
-              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
-            >
-              &#47;&#47; future-scope
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
+            <Link
+              href="#stats"
               className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
             >
               &#47;&#47; stats
-            </a>
+            </Link>
           </li>
         </ul>
 
         <div className="flex items-center">
-          <a
+          <Link
             className="text-xs font-mono font-semibold tracking-wide uppercase bg-emerald-500/5 hover:bg-emerald-500 active:bg-emerald-700 active:border-emerald-700 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 hover:border-emerald-500 px-4 py-2 transition-colors duration-300"
             href="/Dmytro_Farbun_Fullstack_Developer.pdf"
             download="Dmytro_Farbun_Fullstack_Developer.pdf"
             aria-label="Download PDF Resume File Bundle"
           >
             CV <span className="hidden sm:inline">&nbsp;Download</span>
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
