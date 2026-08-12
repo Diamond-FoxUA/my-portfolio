@@ -39,6 +39,10 @@ export default function Projects() {
           />
         ))}
       </ul>
+
+      <ul>
+        <li></li>
+      </ul>
     </section>
   );
 }

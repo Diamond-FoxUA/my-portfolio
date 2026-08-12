@@ -27,8 +27,7 @@ export default function ProjectCard({
       dragListener={false}
       dragElastic={0.1}
       onMouseDown={onActivate}
-      style={{ x: item.defaultX, y: item.defaultY }}
-      className={`absolute w-85 list-none border border-ayu-border bg-ayu-bg shadow-2xl ${isActive ? "z-50" : "z-10"}`}
+      className={`absolute w-85 list-none border border-ayu-border bg-ayu-bg shadow-2xl ${item.positionClasses} ${isActive ? "z-50" : "z-10"}`}
       whileDrag={{
         borderColor: "#10b981",
         boxShadow: "0 25px 50px -12px rgba(16, 185, 129, 0.2)",

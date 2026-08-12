@@ -9,8 +9,7 @@ export interface ProjectItem {
   techStack: string[];
   liveUrl: string;
   githubUrl: string;
-  defaultX: number;
-  defaultY: number;
+  positionClasses: string;
   githubLink: string;
   liveLink: string;
 }
@@ -40,8 +39,7 @@ export const projectsData: ProjectItem[] = [
       "Advanced Web Accessibility (A11y) with screen-reader attributes, aria-labels, and fluid manual keyboard navigation paths",
     liveUrl: "https://github.com",
     githubUrl: "https://github.com",
-    defaultX: 120,
-    defaultY: 100,
+    positionClasses: "top-[4%] md:left-[5%] lg:top-[10%] lg:left-[10%]",
     githubLink: "https://github.com/Diamond-FoxUA/petlove-web-app",
     liveLink: "https://petlove-web-app.vercel.app/",
   },
@@ -60,8 +58,7 @@ export const projectsData: ProjectItem[] = [
       "Accessible custom component interactions with focus state management and local theme persistence triggers",
     liveUrl: "https://github.com",
     githubUrl: "https://github.com",
-    defaultX: 600,
-    defaultY: 250,
+    positionClasses: "top-[33%] left-[12%] md:top-[37%] md:left-[45%] lg:top-[30%] lg:left-[50%]",
     githubLink: "https://github.com/Diamond-FoxUA/psychologist-app",
     liveLink: "https://psychologist-app-lyart.vercel.app/",
   },
@@ -88,8 +85,7 @@ export const projectsData: ProjectItem[] = [
       "Semantic form field mapping, accessible input descriptions, and custom native validation focus alerts",
     liveUrl: "https://github.com",
     githubUrl: "https://github.com",
-    defaultX: 200,
-    defaultY: 420,
+    positionClasses: "top-[65%] left-[4%] md:top-[62%] md:left-[13%] lg:top-[65%] lg:left-[15%]",
     githubLink: "https://github.com/Diamond-FoxUA/google-forms-lite",
     liveLink: "https://google-forms-lite-client-pied.vercel.app/",
   },
