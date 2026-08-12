@@ -5,7 +5,7 @@ export default function TechStack() {
     <section
       id="stack"
       aria-describedby="stack-heading"
-      className="pb-15 w-full mx-auto"
+      className="py-10 w-full scroll-mt-28"
     >
       <h2
         id="stack-heading"

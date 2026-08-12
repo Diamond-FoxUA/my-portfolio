@@ -1,6 +1,7 @@
 import Hero from "@/widgets/hero/ui/Hero";
 import TechStack from "@/widgets/tech-stack/ui/TechStack";
 import Projects from "@/widgets/projects/ui/Projects";
+import Stats from "@/widgets/stats/ui/Stats";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Projects />
+      <Stats />
     </>
   );
 }

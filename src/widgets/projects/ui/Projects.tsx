@@ -8,7 +8,7 @@ export default function Projects() {
   const [activeWindow, setActiveWindow] = useState<null | string>(null);
 
   return (
-    <section id="projects" aria-describedby="projects-title" className="py-15">
+    <section id="projects" aria-describedby="projects-title" className="py-10 scroll-mt-28">
       <h2
         id="projects-title"
         className="text-2xl font-black tracking-tight pb-10 uppercase text-white font-sans"
