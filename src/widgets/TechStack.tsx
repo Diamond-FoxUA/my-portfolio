@@ -5,11 +5,11 @@ export default function TechStack() {
     <section
       id="stack"
       aria-describedby="stack-heading"
-      className="py-10 w-full scroll-mt-28"
+      className="py-10 md:py-15 lg:py-28 w-full scroll-mt-20"
     >
       <h2
         id="stack-heading"
-        className="text-2xl font-black tracking-tight pb-10 uppercase text-white font-sans"
+        className="text-2xl font-black tracking-tight pb-15 uppercase text-white font-sans"
       >
         Technical Skills
       </h2>

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Developer Workspace Overview"
-      className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:pt-[15dvh] pb-10 md:pb-20 scroll-mt-28"
+      className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 w-full pt-[5dvh] lg:pt-[15dvh] pb-10 md:py-15 lg:pb-28 scroll-mt-28"
     >
       <div className="relative z-10 w-full">
         <h1 className="text-5xl md:text-6xl uppercase mb-2">Dmytro Farbun</h1>

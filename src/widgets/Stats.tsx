@@ -22,11 +22,11 @@ export default function Stats() {
     <section
       id="stats"
       aria-describedby="stats-title"
-      className="py-10 scroll-mt-28"
+      className="py-10 md:py-15 lg:py-28 scroll-mt-20"
     >
       <h2
         id="stats-title"
-        className="text-2xl font-black tracking-tight pb-10 uppercase text-white font-sans"
+        className="text-2xl font-black tracking-tight pb-15 uppercase text-white font-sans"
       >
         Statistics
       </h2>
