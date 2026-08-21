@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import DummyButtons from "@/shared/ui/DummyButtons";
 
 export default function EditorInfo() {
   return (
@@ -11,10 +12,8 @@ export default function EditorInfo() {
           </span>
         </span>
 
-        <div className="flex gap-2 mr-5">
-          <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-          <div className="w-3 h-3 bg-slate-600 rounded-full"></div>
-          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+        <div className="mr-5">
+          <DummyButtons />
         </div>
       </div>
 
@@ -91,7 +90,9 @@ export default function EditorInfo() {
               </div>
               <div className="whitespace-pre-wrap wrap-break-word">
                 &nbsp;&nbsp; core: <span className="text-[#9767ff]">[</span>
-                <span className="text-ayu-string">&quot;Next.js 16&quot;</span>,{" "}
+                <span className="text-ayu-string">
+                  &quot;Next.js 16&quot;
+                </span>,{" "}
                 <span className="text-ayu-string">&quot;React 19&quot;</span>,{" "}
                 <span className="text-ayu-string">&quot;TypeScript&quot;</span>
                 <span className="text-[#9767ff]">]</span>,
