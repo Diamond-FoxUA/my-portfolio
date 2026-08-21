@@ -1,0 +1,67 @@
+"use client";
+
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+} from "recharts";
+
+interface StatsChartProps {
+  data: {
+    id: string;
+    tech: string;
+    projects: number;
+  }[];
+}
+
+export default function StatsWidget({ data }: StatsChartProps) {
+  return (
+    <section
+      id="stats"
+      aria-describedby="stats-title"
+      className="py-10 md:py-15 lg:py-28 scroll-mt-20"
+    >
+      <h2
+        id="stats-title"
+        className="text-2xl font-black tracking-tight pb-15 uppercase text-white font-sans"
+      >
+        Statistics
+      </h2>
+
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart
+          data={data}
+          layout="vertical"
+          margin={{ top: 10, right: 30, left: 0, bottom: 5 }}
+        >
+          <CartesianGrid stroke="#1e293b" horizontal={false} />
+          <YAxis
+            dataKey="tech"
+            type="category"
+            textAnchor="end"
+            tick={{ fontSize: 11, fontFamily: "monospace", dx: -20 }}
+            width={150}
+          />
+          <XAxis
+            dataKey="projects"
+            type="number"
+            ticks={[0, 1, 2, 3]}
+            tick={{ fontSize: 11, fontFamily: "monospace" }}
+            domain={[0, 3]}
+          />
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "#0f172a",
+              borderColor: "#1e293b",
+            }}
+          />
+          <Bar dataKey="projects" fill="#10b981" barSize={12} />
+        </BarChart>
+      </ResponsiveContainer>
+    </section>
+  );
+}
