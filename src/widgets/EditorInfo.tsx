@@ -91,10 +91,11 @@ export default function EditorInfo() {
               <div className="whitespace-pre-wrap wrap-break-word">
                 &nbsp;&nbsp; core: <span className="text-[#9767ff]">[</span>
                 <span className="text-ayu-string">
-                  &quot;Next.js 16&quot;
+                  &quot;Next.js&quot;
                 </span>,{" "}
-                <span className="text-ayu-string">&quot;React 19&quot;</span>,{" "}
-                <span className="text-ayu-string">&quot;TypeScript&quot;</span>
+                <span className="text-ayu-string">&quot;React&quot;</span>,{" "}
+                <span className="text-ayu-string">&quot;TypeScript&quot;</span>,{" "}
+                <span className="text-ayu-string">&quot;JavaScript&quot;</span>
                 <span className="text-[#9767ff]">]</span>,
               </div>
             </li>
@@ -158,6 +159,10 @@ export default function EditorInfo() {
                 <span className="text-ayu-string">
                   &quot;SEO Optimization&quot;
                 </span>
+                ,{" "}
+                <span className="text-ayu-string">
+                  &quot;i18n&quot;
+                </span>
                 <span className="text-[#9767ff]">]</span>,
               </div>
             </li>
@@ -173,9 +178,10 @@ export default function EditorInfo() {
                 &nbsp;&nbsp; specs:{" "}
                 <span className="text-[#9767ff]">{"{"}</span> architecture:{" "}
                 <span className="text-ayu-string">&quot;FSD&quot;</span>,
-                geometry:{" "}
+                linters:{" "}
                 <span className="text-ayu-string">
-                  &quot;rounded-none&quot;
+                  &quot;ESLint&quot;,
+                  &quot;Prettier&quot;
                 </span>{" "}
                 <span className="text-[#9767ff]">{"}"}</span>,
               </div>

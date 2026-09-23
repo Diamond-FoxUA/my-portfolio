@@ -9,7 +9,7 @@ export default async function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-title"
-      className="py-10 md:py-15 lg:py-28 scroll-mt-20"
+      className="py-10 md:py-15 lg:py-28 scroll-mt-5"
     >
       <h2
         id="projects-title"
