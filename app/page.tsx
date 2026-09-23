@@ -1,6 +1,6 @@
 import Hero from "@/widgets/Hero";
-import TechStack from "@/widgets/TechStack";
-import Projects from "@/widgets/Projects";
+import TechStack from "@/features/stack/TechStack";
+import Projects from "@/features/projects/Projects";
 
 export default function Home() {
   return (

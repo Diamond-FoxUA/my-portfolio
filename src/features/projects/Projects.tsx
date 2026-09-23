@@ -1,4 +1,4 @@
-import { getProjects } from "@/api/getProjects";
+import { getProjects } from "@/features/projects/api/getProjects";
 import Link from "next/link";
 import DummyButtons from "@/shared/ui/DummyButtons";
 

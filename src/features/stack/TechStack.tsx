@@ -1,4 +1,4 @@
-import { stackData } from "../model/stackData";
+import { stackData } from "./model/stackData";
 
 export default function TechStack() {
   return (
