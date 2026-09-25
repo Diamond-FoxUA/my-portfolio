@@ -1,8 +1,10 @@
 import EditorInfo from "./EditorInfo";
+import NavBtn from "@/shared/ui/NavBtn";
 
 export default function Hero() {
   return (
     <section
+      id="hero"
       aria-label="Developer Workspace Overview"
       className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 w-full pt-[5dvh] lg:pt-[15dvh] pb-10 md:py-15 lg:pb-28 scroll-mt-28"
     >
@@ -19,16 +21,16 @@ export default function Hero() {
           solving.
         </p>
 
-        <a
-          aria-label="Explore Projects"
-          href="#projects"
-          className="block md:max-w-fit font-mono font-bold text-center text-ayu-function bg-transparent border border-emerald-500 hover:border-emerald-400 hover:scale-110 active:scale-90 px-6 py-3 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#f29718] focus-visible:ring-offset-2 focus-visible:ring-offset-ayu-bg"
+        <NavBtn
+          aria-label="Explore Featured Project"
+          sectionId="featured"
+          className="block md:max-w-fit font-mono font-bold text-center text-ayu-function bg-transparent border border-emerald-500 hover:border-emerald-400 hover:scale-110 active:scale-90 px-6 py-3 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#f29718] focus-visible:ring-offset-2 focus-visible:ring-offset-ayu-bg cursor-pointer"
         >
-          exploreProjects<span aria-hidden="true">()</span>
+          exploreFeatured<span aria-hidden="true">()</span>
           <span aria-hidden="true" className="text-ayu-text">
             ;
           </span>
-        </a>
+        </NavBtn>
       </div>
 
       <EditorInfo />

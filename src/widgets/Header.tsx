@@ -1,3 +1,7 @@
+"use client";
+
+import NavList from "./NavList";
+import NavBtn from "@/shared/ui/NavBtn";
 import Link from "next/link";
 
 export default function Header() {
@@ -7,42 +11,14 @@ export default function Header() {
         className="flex items-center justify-between"
         aria-label="Main Navigation"
       >
-        <Link
-          href="/"
-          className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text active:text-ayu-heading transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1"
-        >
+        <NavBtn className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text active:text-ayu-heading transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1">
           df
           <span className="text-emerald-400 ml-0.5 animate-pulse transition-colors duration-300 group-hover:[animation-duration:600ms]">
             _
           </span>
-        </Link>
+        </NavBtn>
 
-        <ul className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-slate-400 font-mono">
-          <li>
-            <Link
-              href="#projects"
-              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
-            >
-              &#47;&#47; projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#stack"
-              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
-            >
-              &#47;&#47; stack
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#stats"
-              className="hover:text-emerald-400 active:text-emerald-700 transition-colors duration-300"
-            >
-              &#47;&#47; stats
-            </Link>
-          </li>
-        </ul>
+        <NavList />
 
         <div className="flex items-center">
           <Link

@@ -13,6 +13,7 @@ const getPingStyle = (ping: string | number) => {
 
 export default function Footer() {
   const [ping, setPing] = useState<number | string>("...");
+  const pingStyle = getPingStyle(ping);
 
   useEffect(() => {
     const [entry] = performance.getEntriesByType("navigation");
@@ -29,8 +30,6 @@ export default function Footer() {
     }
   }, []);
 
-  const pingStyle = getPingStyle(ping);
-
   return (
     <footer className="text-ayu-text font-mono text-sm tracking-wider w-full border-t border-slate-700">
       <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row md:px-6 py-8 md:justify-between gap-10 items-center mx-auto">
@@ -43,6 +42,7 @@ export default function Footer() {
           <li>
             <Link href="https://github.com/Diamond-FoxUA">
               <Icon
+                aria-hidden="true"
                 name="github"
                 className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
               />
@@ -51,6 +51,7 @@ export default function Footer() {
           <li>
             <Link href="https://t.me/X_Diamond_Fox_X">
               <Icon
+                aria-hidden="true"
                 name="telegram"
                 className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
               />
@@ -59,6 +60,7 @@ export default function Footer() {
           <li>
             <Link href="https://www.linkedin.com/in/dmytro-farbun">
               <Icon
+                aria-hidden="true"
                 name="linkedin"
                 className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
               />
