@@ -1,7 +1,36 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "@/shared/ui/Icon";
 
+const getPingStyle = (ping: string | number) => {
+  if (typeof ping === "string") return "text-ayu-tag";
+  if (ping < 200) return "text-emerald-500";
+  if (ping < 500) return "text-ayu-function";
+  return "text-ayu-special";
+};
+
 export default function Footer() {
+  const [ping, setPing] = useState<number | string>("...");
+
+  useEffect(() => {
+    const [entry] = performance.getEntriesByType("navigation");
+
+    if (entry) {
+      const navigation = entry as PerformanceNavigationTiming;
+      const loadTime = Math.round(navigation.responseStart);
+
+      requestAnimationFrame(() => {
+        setPing(loadTime > 0 ? loadTime : 10);
+      });
+    } else {
+      requestAnimationFrame(() => setPing(15));
+    }
+  }, []);
+
+  const pingStyle = getPingStyle(ping);
+
   return (
     <footer className="text-ayu-text font-mono text-sm tracking-wider w-full border-t border-slate-700">
       <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row md:px-6 py-8 md:justify-between gap-10 items-center mx-auto">
@@ -46,7 +75,7 @@ export default function Footer() {
             SYS_ONLINE
           </p>
           <p className="uppercase">
-            Ping: <span className="text-emerald-500 font-bold">24ms</span>
+            Ping: <span className={`${pingStyle} font-bold`}>{ping}ms</span>
           </p>
         </div>
       </div>
