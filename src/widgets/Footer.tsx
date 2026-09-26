@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import Icon from "@/shared/ui/Icon";
+import SocialLinks from "@/shared/ui/SocialLinks";
 
 const getPingStyle = (ping: string | number) => {
   if (typeof ping === "string") return "text-ayu-tag";
@@ -38,35 +37,7 @@ export default function Footer() {
           <p className="text-slate-500">df. all_systems_nominal</p>
         </div>
 
-        <ul className="flex items-center gap-8">
-          <li>
-            <Link href="https://github.com/Diamond-FoxUA">
-              <Icon
-                aria-hidden="true"
-                name="github"
-                className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://t.me/X_Diamond_Fox_X">
-              <Icon
-                aria-hidden="true"
-                name="telegram"
-                className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/in/dmytro-farbun">
-              <Icon
-                aria-hidden="true"
-                name="linkedin"
-                className="w-8 h-8 fill-emerald-600 hover:fill-emerald-500 active:fill-emerald-700 transition-colors duration-300"
-              />
-            </Link>
-          </li>
-        </ul>
+        <SocialLinks />
 
         <div className="flex items-center gap-2">
           <span
