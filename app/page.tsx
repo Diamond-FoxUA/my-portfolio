@@ -4,6 +4,9 @@ import TechStack from "@/features/stack/TechStack";
 import Projects from "@/features/projects/Projects";
 import ScrollToTop from "@/shared/ui/ScrollToTop";
 
+import { Toaster } from "sonner";
+
+
 export default function Home() {
   return (
     <>
@@ -13,6 +16,7 @@ export default function Home() {
       <TechStack />
 
       <ScrollToTop />
+      <Toaster richColors position="top-right"/>
     </>
   );
 }
