@@ -8,18 +8,31 @@ datasource db {
 }
 
 model Project {
-  id String @id @default(uuid())
-  title String
-  slug String @unique
-  description String
-  githubLink String
-  liveLink String
-
-  technologies Technology[]
+  id            String       @id @default(uuid())
+  title         String
+  slug          String       @unique
+  description   String
+  githubLink    String?
+  liveLink      String?
+  isFeatured    Boolean      @default(false)
+  extraLink     String?
+  extraLinkText String?
+  imgUrl        String?
+  createdAt     DateTime     @default(now())
+  features      Feature[]
+  technologies  Technology[] @relation("ProjectToTechnology")
 }
 
 model Technology {
-  id String @id @default(uuid())
-  name String @unique
-  projects Project[]
+  id       String    @id @default(uuid())
+  name     String    @unique
+  projects Project[] @relation("ProjectToTechnology")
+}
+
+model Feature {
+  id          String  @id @default(uuid())
+  title       String
+  description String
+  projectId   String
+  project     Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
 }
