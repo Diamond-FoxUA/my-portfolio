@@ -10,6 +10,9 @@ export type FeaturedProjectWithRelations = Prisma.ProjectGetPayload<{
 
 export async function getProjects(): Promise<ProjectWithTech[]> {
   return await prisma.project.findMany({
+    where: {
+      isFeatured: false,
+    },
     orderBy: [
       {
         createdAt: "asc",

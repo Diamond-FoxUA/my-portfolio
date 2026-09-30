@@ -86,7 +86,7 @@ export default async function Featured() {
           </ul>
         </div>
 
-        <div className="flex items-center gap-3 pt-5">
+        <div className="flex items-center justify-center md:justify-start gap-3 pt-5">
           {project.liveLink && (
             <Link
               href={project.liveLink as string}
@@ -112,7 +112,7 @@ export default async function Featured() {
               href={project.extraLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-ayu-string hover:text-ayu-string/80 active:text-ayu-string/50 underline transition-colors duration-300 ml-5"
+              className="text-ayu-string hover:text-ayu-string/80 active:text-ayu-string/50 underline transition-colors duration-300"
             >
               {project.extraLinkText}
             </Link>

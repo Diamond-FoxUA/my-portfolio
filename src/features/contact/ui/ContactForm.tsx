@@ -45,7 +45,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="text-white flex flex-col w-77 items-start justify-center gap-5 font-mono"
+      className="text-white flex flex-col w-full lg:w-77 items-start justify-center gap-5 font-mono"
     >
       <div
         className="w-0 h-0 overflow-hidden -z-50 opacity-0 absolute"
