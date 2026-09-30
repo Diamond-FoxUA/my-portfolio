@@ -85,7 +85,6 @@ export default async function Featured() {
             ))}
           </ul>
         </div>
-        <p>{project.description}</p>
 
         <div className="flex items-center gap-3 pt-5">
           {project.liveLink && (
