@@ -7,7 +7,11 @@ import { toast } from "sonner";
 import { contactSchema, type ContactInput } from "../schema/contactSchema";
 import { sendContactFormAction } from "../action";
 
-export default function ContactForm() {
+type ContactFormProps = {
+  onClose: () => void;
+};
+
+export default function ContactForm({ onClose }: ContactFormProps) {
   const {
     register,
     handleSubmit,
@@ -40,6 +44,7 @@ export default function ContactForm() {
     });
 
     reset();
+    onClose();
   };
 
   return (

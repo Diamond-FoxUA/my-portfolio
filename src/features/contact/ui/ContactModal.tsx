@@ -57,7 +57,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModal) {
               send<span aria-hidden="true">_</span>email
             </h3>
             <div>
-              <ContactForm />
+              <ContactForm onClose={onClose} />
             </div>
           </div>
 

@@ -25,7 +25,8 @@ export default function ScrollToTop() {
 
   return (
     <NavBtn
-      className={`fixed z-50 bottom-[5dvh] md:bottom-[15dvh] right-[5vw] flex justify-center items-center group bg-ayu-bg/80 border-3 border-dashed border-emerald-600 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-130"} w-12 h-12 duration-300 cursor-pointer`}
+      aria-label="Go to the top of the page"
+      className={`fixed z-50 bottom-[5dvh] md:bottom-[15dvh] right-[5vw] flex justify-center items-center group bg-ayu-bg/80 border-3 border-dashed border-emerald-600 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-130 invisible pointer-events-none"} w-12 h-12 duration-300 cursor-pointer`}
     >
       <ArrowBigUpDash
         aria-hidden="true"
