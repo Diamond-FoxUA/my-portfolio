@@ -11,9 +11,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cloudinary.com", 
+        hostname: "cloudinary.com",
       },
     ],
+    formats: ["image/avif", "image/webp"],
   },
 };
 

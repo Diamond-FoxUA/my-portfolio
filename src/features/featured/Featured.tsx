@@ -39,8 +39,8 @@ export default async function Featured() {
             <Image
               src={displayImage}
               alt=""
-              width={800}
-              height={500}
+              fill
+              sizes="(max-width: 640px) 288px, (max-width: 1024px) 718px, 530px"
               className="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.01] group-focus-visible:scale-[1.01]"
               priority
             />

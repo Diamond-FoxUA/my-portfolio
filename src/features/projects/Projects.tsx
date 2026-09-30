@@ -44,7 +44,7 @@ export default async function Projects() {
                         src={p.imgUrl}
                         alt=""
                         fill
-                        sizes="..."
+                        sizes="(max-width: 640px) 268px, (max-width: 1024px) 330px, 335px"
                         className="block w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.01] group-focus-visible:scale-[1.01]"
                       />
                       <div
@@ -52,7 +52,7 @@ export default async function Projects() {
                         className="absolute inset-0 bg-slate-950/80 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 backdrop-blur-[2px]"
                       >
                         <div className="font-mono text-xs text-cyan-400 bg-slate-900/90 border border-cyan-500/30 px-4 py-2 rounded-md shadow-lg tracking-wider flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping"></span>
+                          <span  className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping"></span>
                           click_to_view_live()
                         </div>
                       </div>
