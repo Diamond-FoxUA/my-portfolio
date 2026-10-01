@@ -31,7 +31,7 @@ export default function Header() {
             <ContactBtn handleClick={() => setIsModalOpen(true)} />
             <Link
               className="text-xs font-mono font-semibold tracking-wide uppercase bg-emerald-500/5 hover:bg-emerald-500 active:bg-emerald-700 active:border-emerald-700 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 hover:border-emerald-500 px-4 py-2 transition-colors duration-300"
-              href="/Dmytro_Farbun_Fullstack_Developer.pdf"
+              href="https://raw.githubusercontent.com/Diamond-FoxUA/cv/main/Dmytro_Farbun_Fullstack_Developer.pdf"
               download="Dmytro_Farbun_Fullstack_Developer.pdf"
               aria-label="Download PDF Resume File Bundle"
             >
