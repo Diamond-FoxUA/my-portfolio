@@ -13,6 +13,7 @@ const getPingStyle = (ping: string | number) => {
 export default function Footer() {
   const [ping, setPing] = useState<number | string>("...");
   const pingStyle = getPingStyle(ping);
+  const isFiverr = process.env.NEXT_PUBLIC_PLATFORM_MODE == "fiverr";
 
   useEffect(() => {
     const [entry] = performance.getEntriesByType("navigation");
@@ -42,7 +43,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <SocialLinks />
+        {!isFiverr && <SocialLinks />}
 
         <div aria-hidden="true" className="flex items-center gap-2">
           <span className="block w-2 h-2 bg-emerald-400 animate-pulse"></span>
