@@ -24,10 +24,11 @@ export default async function Projects() {
         {projects.map((p) => (
           <li key={p.id}>
             <article className="flex flex-col h-full border border-ayu-border rounded-lg">
-              <div className="flex justify-between items-center bg-ayu-border/70 border-b border-ayu-border py-2 px-3 rounded-t-lg">
-                <span aria-hidden="true" className="font-mono text-xs">
-                  {p.slug}.config.ts
-                </span>
+              <div
+                aria-hidden="true"
+                className="flex justify-between items-center bg-ayu-border/70 border-b border-ayu-border py-2 px-3 rounded-t-lg"
+              >
+                <span className="font-mono text-xs">{p.slug}.config.ts</span>
                 <DummyButtons />
               </div>
 
@@ -37,7 +38,7 @@ export default async function Projects() {
                     href={p.liveLink || p.githubLink || "#"}
                     rel="noopener noreferrer"
                     target="_blank"
-                    aria-label={`Open live demo of ${p.title}`}
+                    aria-label={`Open live demo of ${p.title} (opens in a new tab)`}
                   >
                     <div className="w-full aspect-16/10 overflow-hidden rounded-lg group border border-slate-800 bg-slate-900 block relative transition-colors duration-300 hover:border-cyan-500/50 focus-visible:border-cyan-500/50 focus:outline-none">
                       <Image
@@ -52,7 +53,7 @@ export default async function Projects() {
                         className="absolute inset-0 bg-slate-950/80 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300 backdrop-blur-[2px]"
                       >
                         <div className="font-mono text-xs text-cyan-400 bg-slate-900/90 border border-cyan-500/30 px-4 py-2 rounded-md shadow-lg tracking-wider flex items-center gap-2">
-                          <span  className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping"></span>
+                          <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-ping"></span>
                           click_to_view_live()
                         </div>
                       </div>
@@ -77,6 +78,7 @@ export default async function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-ayu-string underline"
+                      aria-label={`${p.extraLinkText} for project ${p.title} (opens in a new tab)`}
                     >
                       {p.extraLinkText}
                     </Link>
@@ -87,6 +89,7 @@ export default async function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-ayu-string underline"
+                      aria-label={`Live demo for project ${p.title} (opens in a new tab)`}
                     >
                       Live
                     </Link>
@@ -97,6 +100,7 @@ export default async function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-ayu-string underline"
+                      aria-label={`GitHub repository for project ${p.title} (opens in a new tab)`}
                     >
                       GitHub
                     </Link>

@@ -4,7 +4,7 @@ export default function TechStack() {
   return (
     <section
       id="stack"
-      aria-describedby="stack-heading"
+      aria-labelledby="stack-heading"
       className="py-10 md:py-15 lg:py-28 w-full scroll-mt-20"
     >
       <h2
@@ -16,7 +16,6 @@ export default function TechStack() {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border-t border-l border-ayu-border bg-[#030712] shadow-2xl">
         <div
-          role="region"
           aria-label="Frontend Technologies"
           className="flex flex-col justify-start group md:col-span-6 md:row-span-2 p-6 bg-ayu-bg border-r border-b border-ayu-border transition-colors duration-300 hover:bg-[#f29718]/15 hover:border-[#f29718]/30"
         >

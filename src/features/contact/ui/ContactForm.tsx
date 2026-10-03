@@ -33,18 +33,16 @@ export default function ContactForm({ onClose }: ContactFormProps) {
       return res;
     };
 
-    toast.promise(submitPromise(), {
-      loading: "Sending message...",
-      success: () => {
-        return "Message delivered successfully!";
-      },
-      error: (err) => {
-        return err.message || "Something went wrong. Try again.";
-      },
-    });
+    try {
+      await toast.promise(submitPromise(), {
+        loading: "Sending message...",
+        success: "Message delivered successfully!",
+        error: (err) => err.message || "Something went wrong. Try again.",
+      });
 
-    reset();
-    onClose();
+      reset();
+      onClose();
+    } catch {}
   };
 
   return (
@@ -64,6 +62,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
           Name
         </label>
         <input
+          id="name"
           type="text"
           {...register("name")}
           aria-required="true"
@@ -83,6 +82,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
           Email
         </label>
         <input
+          id="email"
           type="email"
           {...register("email")}
           aria-required="true"
@@ -106,6 +106,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
           Message
         </label>
         <textarea
+          id="message"
           {...register("message")}
           aria-required="true"
           aria-invalid={errors.message ? "true" : "false"}
@@ -126,6 +127,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
 
       <button
         type="submit"
+        disabled={isSubmitting}
         className="block w-full max-w-30.5 text-xs font-mono font-semibold tracking-wide uppercase bg-emerald-500/5 hover:bg-emerald-500 active:bg-emerald-700 active:border-emerald-700 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 hover:border-emerald-500 px-4 py-2 transition-colors duration-300 cursor-pointer mt-5"
       >
         {isSubmitting ? "Sending..." : "Send"}

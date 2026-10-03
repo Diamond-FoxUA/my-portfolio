@@ -3,7 +3,10 @@ import DummyButtons from "@/shared/ui/DummyButtons";
 
 export default function EditorInfo() {
   return (
-    <div className="hidden md:block relative z-10 w-full pb-1 bg-ayu-bg border-2 border-ayu-panel shadow-2xl">
+    <div
+      aria-hidden="true"
+      className="hidden md:block relative z-10 w-full pb-1 bg-ayu-bg border-2 border-ayu-panel shadow-2xl"
+    >
       <div className="flex justify-between items-center h-10 bg-[#0c132268]">
         <span className="text-xs flex items-center gap-3 w-fit h-full bg-ayu-bg px-4 py-2 border-t border-ayu-function">
           developer.config.ts{" "}
@@ -159,10 +162,7 @@ export default function EditorInfo() {
                 <span className="text-ayu-string">
                   &quot;SEO Optimization&quot;
                 </span>
-                ,{" "}
-                <span className="text-ayu-string">
-                  &quot;i18n&quot;
-                </span>
+                , <span className="text-ayu-string">&quot;i18n&quot;</span>
                 <span className="text-[#9767ff]">]</span>,
               </div>
             </li>
@@ -180,8 +180,7 @@ export default function EditorInfo() {
                 <span className="text-ayu-string">&quot;FSD&quot;</span>,
                 linters:{" "}
                 <span className="text-ayu-string">
-                  &quot;ESLint&quot;,
-                  &quot;Prettier&quot;
+                  &quot;ESLint&quot;, &quot;Prettier&quot;
                 </span>{" "}
                 <span className="text-[#9767ff]">{"}"}</span>,
               </div>

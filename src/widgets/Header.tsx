@@ -18,7 +18,10 @@ export default function Header() {
           className="flex items-center justify-between"
           aria-label="Main Navigation"
         >
-          <NavBtn className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text active:text-ayu-heading transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1">
+          <NavBtn
+            aria-label="Home - Go to top"
+            className="font-mono group text-lg font-bold tracking-tight text-white hover:text-ayu-text active:text-ayu-heading transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 px-1"
+          >
             df
             <span className="text-emerald-400 ml-0.5 animate-pulse transition-colors duration-300 group-hover:[animation-duration:600ms]">
               _

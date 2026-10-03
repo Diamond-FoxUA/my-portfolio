@@ -26,7 +26,7 @@ export default function Hero() {
           sectionId="featured"
           className="block md:max-w-fit font-mono font-bold text-center text-ayu-function bg-transparent border border-emerald-500 hover:border-emerald-400 hover:scale-110 active:scale-90 px-6 py-3 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#f29718] focus-visible:ring-offset-2 focus-visible:ring-offset-ayu-bg cursor-pointer"
         >
-          exploreFeatured<span aria-hidden="true">()</span>
+          <span aria-hidden="true">exploreFeatured()</span>
           <span aria-hidden="true" className="text-ayu-text">
             ;
           </span>

@@ -28,10 +28,13 @@ export default function ContactModal({ isOpen, onClose }: ContactModal) {
 
   return (
     <dialog
-      onClose={onClose}
+      onCancel={(e) => {
+        e.preventDefault();
+        onClose();
+      }}
       onClick={(e) => e.target === dialogRef.current && onClose()}
       ref={dialogRef}
-      className="backdrop:bg-transparent bg-[#030712]/40 backdrop-blur-md border border-slate-800/40 rounded-4xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 outline-none w-[95%] max-w-162.5"
+      className="m-auto backdrop:bg-transparent bg-[#030712]/40 backdrop-blur-md border border-slate-800/40 rounded-4xl w-[95%] lg:w-fit shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]"
     >
       <div className="flex flex-col gap-10 w-fit h-auto p-8 mx-auto">
         <button

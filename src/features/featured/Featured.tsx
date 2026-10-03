@@ -33,7 +33,7 @@ export default async function Featured() {
             href={(project.liveLink || project.githubLink || "#") as string}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Open live demo of ${project.title}`}
+            aria-label={`Open live demo of ${project.title} (opens in a new tab)`}
             className="w-full aspect-16/10 overflow-hidden rounded-lg group border border-slate-800 bg-slate-900 block relative transition-colors duration-300 hover:border-cyan-500/50 focus-visible:border-cyan-500/50 focus:outline-none"
           >
             <Image
@@ -94,6 +94,7 @@ export default async function Featured() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-ayu-string hover:text-ayu-string/80 active:text-ayu-string/50 underline transition-colors duration-300"
+              aria-label={`Live demo for project ${project.title} (opens in a new tab)`}
             >
               Live
             </Link>
@@ -104,6 +105,7 @@ export default async function Featured() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-ayu-string hover:text-ayu-string/80 active:text-ayu-string/50 underline transition-colors duration-300"
+              aria-label={`GitHub repository for project ${project.title} (opens in a new tab)`}
             >
               GitHub
             </Link>
@@ -114,6 +116,7 @@ export default async function Featured() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-ayu-string hover:text-ayu-string/80 active:text-ayu-string/50 underline transition-colors duration-300"
+              aria-label={`${project.extraLinkText} for project ${project.title} (opens in a new tab)`}
             >
               {project.extraLinkText}
             </Link>

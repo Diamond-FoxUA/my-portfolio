@@ -28,7 +28,7 @@ export default function SocialLinks() {
             href={l.link}
             rel="noopener noreferrer"
             target="_blank"
-            aria-label={`Proceed to my ${l.title} profile`}
+            aria-label={`${l.title} (opens in a new tab)`}
           >
             <Icon
               aria-hidden="true"
