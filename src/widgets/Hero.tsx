@@ -17,10 +17,10 @@ export default function Hero() {
         </p>
 
         <p className="leading-relaxed max-w-md mt-4 mb-8">
-          Fullstack Developer with hands-on experience
-          building modern web applications using React, Next.js, Node.js, and
-          TypeScript. Focused on responsive interfaces, clean architecture, and
-          practical problem solving.
+          Fullstack Developer with hands-on experience building modern web
+          applications using React, Next.js, Node.js, and TypeScript. Focused on
+          responsive interfaces, clean architecture, and practical problem
+          solving.
           {isFiverr && (
             <em className="block pt-5 not-italic">
               Available for custom fullstack development and API integrations.
@@ -42,8 +42,8 @@ export default function Hero() {
 
       <EditorInfo />
 
-      <div className="absolute top-[10dvh] left-[10%] z-0 w-30 h-30 blur-[120px] bg-ayu-keyword"></div>
-      <div className="absolute top-[70dvh] right-[20%] md:top-[28dvh] md:right-[15%] z-0 w-35 h-35 blur-[120px] bg-ayu-string"></div>
+      <div className="absolute top-[10dvh] left-[10%] z-0 w-30 h-30 blur-[120px] bg-[radial-gradient(circle,#ffa759_0%,#ffa759_70%)] will-change-transform"></div>
+      <div className="absolute top-[70dvh] right-[20%] md:top-[28dvh] md:right-[15%] z-0 w-35 h-35 blur-[120px] bg-[radial-gradient(circle,#bae67e_0%,#bae67e_70%)] bg-ayu-string will-change-transform"></div>
     </section>
   );
 }
