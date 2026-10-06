@@ -2,8 +2,8 @@
 
 A high-performance, single-page fullstack engineer portfolio built with an elite focus on production-grade standards. Designed in a deep, distraction-free IDE-inspired aesthetic specifically tailored for technical leaders, this hub features a custom, hand-coded real-time analytics engine that records page views, outbound project clicks, and resume downloads dynamically without third-party analytics bloat.
 
-🔗 **Live Demo:** Under Construction 🚧 <br />
-📄 **Developer Resume:** Under Construction 🚧 <br />
+🔗 **Live Demo:** [DF Portfolio](https://my-portfolio-main-eta-jade.vercel.app) <br />
+📄 **Developer Resume:** [Dmytro_Farbun_Fullstack_Developer.pdf](https://raw.githubusercontent.com/Diamond-FoxUA/cv/main/Dmytro_Farbun_Fullstack_Developer.pdf) <br />
 🐙 **Source Code:** [GitHub](https://github.com/Diamond-FoxUA/my-portfolio) <br />
 
 ---
@@ -26,12 +26,13 @@ A high-performance, single-page fullstack engineer portfolio built with an elite
 - **Strict Structural Enforcement:** Maintained via defensive programming and pure function implementations that rigorously honor the "Rules of React", enabling automated build-time performance optimization across client modules.
 
 ### ♿ Elite A11y Standards & Semantic HTML
-*   **Semantic Layout Outlines:** Built strictly with native semantic landmark framework containers (`<header>`, `<main>`, `<section>`, `<footer>`) to construct an immaculate, accessible document tree outline easily parsed by screen readers.
-*   **Descriptive ARIA Associations:** Implements explicit `aria-label` settings on icon-only interactive controls (like social anchors), alongside precise `aria-describedby` and `aria-labelledby` mappings to programmatically link modal headlines and broadcast dynamic form field validation constraints to assistive engines.
-*   **Audible Clutter Reduction:** Employs defensive `aria-hidden="true"` attributes on decorative layouts, tech stack icons, and visual background mesh grids to block screen readers from processing unnecessary audible noise.
-*   **Native Modal Form Controls:** Implements the native HTML `<dialog>` element to anchor the interactive contact form wrapper. This delivers native keyboard focus traps, automated `Escape` key close boundaries, and semantic screen-reader focus redirection out of the box.
-*   **Custom Font-Variant Ligatures:** Leverages hand-optimized local files for **Cascadia Code** and **Impact** compiled via `next/font/local`. Implements native browser subpixel font smoothing (`antialiased`) alongside strict `font-variant-ligatures` CSS properties to mimic a true production IDE environment.
-*   **Dynamic Social Graph & Semantic Metadata:** Fully optimized for crawler indexing and rich-media link preview sharing across Telegram, LinkedIn, and X (Twitter) utilizing declarative Next.js `Metadata` objects integrated with comprehensive **OpenGraph (OG)** image configurations.
+
+- **Semantic Layout Outlines:** Built strictly with native semantic landmark framework containers (`<header>`, `<main>`, `<section>`, `<footer>`) to construct an immaculate, accessible document tree outline easily parsed by screen readers.
+- **Descriptive ARIA Associations:** Implements explicit `aria-label` settings on icon-only interactive controls (like social anchors), alongside precise `aria-describedby` and `aria-labelledby` mappings to programmatically link modal headlines and broadcast dynamic form field validation constraints to assistive engines.
+- **Audible Clutter Reduction:** Employs defensive `aria-hidden="true"` attributes on decorative layouts, tech stack icons, and visual background mesh grids to block screen readers from processing unnecessary audible noise.
+- **Native Modal Form Controls:** Implements the native HTML `<dialog>` element to anchor the interactive contact form wrapper. This delivers native keyboard focus traps, automated `Escape` key close boundaries, and semantic screen-reader focus redirection out of the box.
+- **Custom Font-Variant Ligatures:** Leverages hand-optimized local files for **Cascadia Code** and **Impact** compiled via `next/font/local`. Implements native browser subpixel font smoothing (`antialiased`) alongside strict `font-variant-ligatures` CSS properties to mimic a true production IDE environment.
+- **Dynamic Social Graph & Semantic Metadata:** Fully optimized for crawler indexing and rich-media link preview sharing across Telegram, LinkedIn, and X (Twitter) utilizing declarative Next.js `Metadata` objects integrated with comprehensive **OpenGraph (OG)** image configurations.
 
 ---
 
@@ -60,10 +61,10 @@ A high-performance, single-page fullstack engineer portfolio built with an elite
 
 ### Form Processing & UI Graphics
 
-*   **React Hook Form (v7.x)** — High-performance, un-controlled form validation engine.
-*   **Zod (v3.x)** — TypeScript-first schema declaration and type-safe verification.
-*   **Lucide React (v0.x)** — High-performance, tree-shakable native SVG icon wrappers.
-*   **Cascadia Code & Impact Fonts** — Variable high-end typography providing native code ligatures and bold brutalist headers.
+- **React Hook Form (v7.x)** — High-performance, un-controlled form validation engine.
+- **Zod (v3.x)** — TypeScript-first schema declaration and type-safe verification.
+- **Lucide React (v0.x)** — High-performance, tree-shakable native SVG icon wrappers.
+- **Cascadia Code & Impact Fonts** — Variable high-end typography providing native code ligatures and bold brutalist headers.
 
 ---
 
