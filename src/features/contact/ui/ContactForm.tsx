@@ -62,6 +62,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
           Name
         </label>
         <input
+          autoFocus
           id="name"
           type="text"
           {...register("name")}
