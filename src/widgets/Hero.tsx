@@ -1,12 +1,15 @@
 import EditorInfo from "./EditorInfo";
 import NavBtn from "@/shared/ui/NavBtn";
+import SocialLinks from "@/shared/ui/SocialLinks";
 
 export default function Hero() {
+  const isFiverr = process.env.NEXT_PUBLIC_PLATFORM_MODE === "fiverr";
+
   return (
     <section
       id="hero"
       aria-label="Developer Workspace Overview"
-      className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 w-full pt-[5dvh] lg:pt-[15dvh] pb-10 md:py-15 lg:pb-28 scroll-mt-28"
+      className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 w-full pt-[5dvh] lg:pt-[15dvh] pb-10 md:py-15 lg:pb-33 scroll-mt-28"
     >
       <div className="relative z-10 w-full">
         <h1 className="text-5xl md:text-6xl uppercase mb-2">Dmytro Farbun</h1>
@@ -22,16 +25,20 @@ export default function Hero() {
           </em>
         </p>
 
-        <NavBtn
-          aria-label="Explore Featured Project"
-          sectionId="featured"
-          className="block md:max-w-fit font-mono font-bold text-center text-ayu-function bg-transparent border border-emerald-500 hover:border-emerald-400 hover:scale-110 active:scale-90 px-6 py-3 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#f29718] focus-visible:ring-offset-2 focus-visible:ring-offset-ayu-bg cursor-pointer"
-        >
-          <span aria-hidden="true">exploreFeatured()</span>
-          <span aria-hidden="true" className="text-ayu-text">
-            ;
-          </span>
-        </NavBtn>
+        <div className="flex gap-16 items-center">
+          <NavBtn
+            aria-label="Explore Featured Project"
+            sectionId="featured"
+            className="block items-center md:max-w-fit font-mono font-bold text-center text-ayu-function bg-transparent border border-emerald-500 hover:border-emerald-400 hover:scale-110 active:scale-90 px-6 py-3 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#f29718] focus-visible:ring-offset-2 focus-visible:ring-offset-ayu-bg cursor-pointer"
+          >
+            <span aria-hidden="true">exploreFeatured()</span>
+            <span aria-hidden="true" className="text-ayu-text">
+              ;
+            </span>
+          </NavBtn>
+
+          {!isFiverr && <SocialLinks />}
+        </div>
       </div>
 
       <EditorInfo />
