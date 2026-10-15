@@ -25,7 +25,7 @@ export default function Hero() {
           </em>
         </p>
 
-        <div className="flex gap-16 items-center">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center">
           <NavBtn
             aria-label="Explore Featured Project"
             sectionId="featured"
